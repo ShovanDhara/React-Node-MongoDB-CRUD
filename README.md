@@ -1,4 +1,4 @@
-# C&W IPL Application Instructions
+# IPL Application Instructions
 
 C&W IPL Application is a Meanstack App for IPL all season's matches and team status with detail report
 
