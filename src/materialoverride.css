@@ -1,0 +1,162 @@
+.MuiFormControl-marginNormal {
+    margin: 0 !important;
+}
+
+.white-button {
+    color: #fff !important;
+}
+
+.top-header .MuiAppBar-root {
+    background-image: linear-gradient(to right, rgba(7, 18, 13, 1) 0%, rgba(41, 95, 25, 1) 100%);
+}
+
+.header-KXP .MuiAppBar-root {
+    background-image: linear-gradient(to right, #D15056 0%, #B62025 100%);
+}
+
+.header-CSK .MuiAppBar-root {
+    background-image: linear-gradient(to right, #EC6B06 0%, #F1C700 100%);
+}
+
+.header-DC .MuiAppBar-root {
+    background-image: linear-gradient(to right, #606B93 0%, #36496B 100%);
+}
+
+.header-DC .MuiAppBar-root {
+    background-image: linear-gradient(to right, #606B93 0%, #36496B 100%);
+}
+
+.header-DC-C .MuiAppBar-root {
+    background-image: linear-gradient(to right, #235FAB 0%, #282969 100%);
+}
+
+.header-DD .MuiAppBar-root {
+    background-image: linear-gradient(to right, #EE3326 0%, #C22C26 100%);
+}
+
+.header-GL .MuiAppBar-root {
+    background-image: linear-gradient(to right, #F6BE23 0%, #B96C2D 100%);
+}
+
+.header-KTK .MuiAppBar-root {
+    background-image: linear-gradient(to right, #6A367B 0%, #4D354D 100%);
+}
+
+.header-KKR .MuiAppBar-root {
+    background-image: linear-gradient(to right, #39215D 0%, #E5C153 100%);
+}
+
+.header-MI .MuiAppBar-root {
+    background-image: linear-gradient(to right, #055999 0%, #144D84 100%);
+}
+
+.header-PW .MuiAppBar-root {
+    background-image: linear-gradient(to right, #F05845 0%, #57934B 100%);
+}
+
+.header-RR .MuiAppBar-root {
+    background-image: linear-gradient(to right, #034EA0 0%, #D3AE3B 100%);
+}
+
+.header-RPS .MuiAppBar-root {
+    background-image: linear-gradient(to right, #803977 0%, #943C7D 100%);
+}
+
+.header-RCB .MuiAppBar-root {
+    background-image: linear-gradient(to right, #DCB54C 0%, #F4303E 100%);
+}
+
+.header-SH .MuiAppBar-root {
+    background-image: linear-gradient(to right, #FAA530 0%, #EA6D37 100%);
+}
+
+.cw-form-control .cw-select {
+    background: #fff;
+    border-bottom: 2px solid #214e16;
+    text-align: left;
+}
+
+.cw-form-control .cw-select .MuiSelect-select:focus {
+    background: none;
+}
+
+.cw-form-control .cw-select .MuiFormLabel-root.Mui-focused,
+.cw-form-control .cw-input .MuiFormLabel-root.Mui-focused {
+    color: #272729;
+}
+
+.cw-form-control .cw-select label+.MuiInput-formControl {
+    margin: 0;
+    min-height: 51px;
+}
+
+.cw-form-control .cw-select .MuiSelect-icon {
+    border-left: 1px solid #ccc;
+    min-width: 3rem;
+}
+
+.cw-form-control .cw-select .MuiSelect-selectMenu {
+    padding-left: 11px;
+    padding-top: 22px;
+}
+
+.cw-form-control .cw-input .MuiInputLabel-shrink.MuiInputLabel-formControl {
+    top: 5px;
+}
+
+.cw-form-control .cw-input.MuiFormControl-root {
+    background: #fff;
+}
+
+.cw-form-control .cw-input .MuiInputLabel-formControl {
+    padding-left: 10px;
+}
+
+.cw-form-control .cw-input .MuiInputBase-input {
+    padding-left: 10px;
+}
+
+.cw-form-control .cw-input {
+    border-bottom: 2px solid #214e16;
+}
+
+.cw-form-control .checkbox-label {
+    color: #fff;
+}
+
+.cw-form-control .cw-checkbox {
+    color: #fff;
+}
+
+.cw-form-control .cw-checkbox.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #fff;
+}
+
+.cw-btn-form {
+    min-height: 51px;
+    border-color: #fff !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.cw-pagination {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.cw-pagination .MuiTablePagination-caption {
+    color: #fff;
+}
+
+.cw-pagination .MuiTablePagination-select,
+.cw-pagination .MuiTablePagination-select:focus {
+    background: #fff;
+}
+
+.cw-pagination .pagination-button-group button {
+    color: #fff;
+}
+
+.cw-pagination .pagination-button-group button:disabled {
+    opacity: 0.5;
+}

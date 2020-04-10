@@ -1,0 +1,252 @@
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    min-height: 100px;
+}
+.cw-white-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    min-height: 100px;
+}
+.cw-white-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.tab-content {
+    background: #fff;
+}
+
+.tab-wrapper .tab-content-heading {
+    font-size: 16px;
+    color: #8e8888;
+    font-weight: bold;
+}
+
+.react-multiple-carousel__arrow {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+    height: 85px;
+    width: 24px;
+    padding: 0;
+    min-width: initial;
+}
+
+.cw-table thead th {
+    background: #16350e;
+    color: #fff !important;
+}
+
+.cw-table.cw-table-batting thead th {
+    background: transparent;
+}
+
+.cw-table.cw-table-batting thead {
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+
+.cw-table.cw-table-bowling thead th {
+    background: transparent;
+}
+
+.cw-table.cw-table-bowling thead {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.cw-table tbody tr:nth-child(even) {
+    background: #f3f3f3;
+}
+
+.cw-table.cw-table-large thead th,
+.cw-table.cw-table-large tbody td {
+    padding: 10px !important;
+    font-size: 12px !important;
+}
+
+.cw-table tfoot {
+    background: #4c4949;
+    color: #fff;
+}
+
+.cw-table tfoot .MuiTableCell-footer {
+    color: #fff;
+    font-weight: bold;
+}
+
+.cw-table tfoot .MuiTableCell-root {
+    padding: 10px;
+}
+
+.cw-tab .MuiTab-textColorInherit.Mui-selected {
+    background: #333;
+    color: #fff;
+}
+
+.cw-tab .MuiTab-textColorInherit {
+    opacity: 1;
+    background: #a9a5a5;
+}
+
+.react-multiple-carousel__arrow:before {
+    color: #ccc;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: 0;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: 0;
+}
+
+.react-multiple-carousel__arrow:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.carousel-container {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.b-MI {
+    background: url("../public/images/mi-small.png") no-repeat;
+}
+
+.b-RPS {
+    background: url("../public/images/rp-small.png") no-repeat;
+}
+
+.b-RCB {
+    background: url("../public/images/rcb-small.png") no-repeat;
+}
+
+.b-KKR {
+    background: url("../public/images/kkr-small.png") no-repeat;
+}
+
+.b-DC-C {
+    background: url("../public/images/dc-c-small.png") no-repeat;
+}
+
+.b-DC {
+    background: url("../public/images/dc-small.png") no-repeat;
+}
+
+.b-DD {
+    background: url("../public/images/dd-small.png") no-repeat;
+}
+
+.b-KXP {
+    background: url("../public/images/kxp-small.png") no-repeat;
+}
+
+.b-SH {
+    background: url("../public/images/sh-small.png") no-repeat;
+}
+
+.b-CSK {
+    background: url("../public/images/csk-small.png") no-repeat;
+}
+
+.b-GL {
+    background: url("../public/images/gl-small.png") no-repeat;
+}
+
+.b-RR {
+    background: url("../public/images/rr-small.png") no-repeat;
+}
+
+.b-KTK {
+    background: url("../public/images/ktk-small.png") no-repeat;
+}
+
+.b-PW {
+    background: url("../public/images/PW-small.png") no-repeat;
+}
+
+.common-team-large-icon {
+    background: url("../public/images/logo-large.png") no-repeat;
+}
+
+.b-large-RPS, .header-icon-RPS{
+    background: url("../public/images/rps-large.png") no-repeat;
+}
+
+.b-large-KXP, .header-icon-KXP{
+    background: url("../public/images/kxp-large.png") no-repeat;
+}
+
+.b-large-RCB, .header-icon-RCB{
+    background: url("../public/images/rcb-large.png") no-repeat;
+}
+
+.b-large-DD, .header-icon-DD{
+    background: url("../public/images/dd-large.png") no-repeat;
+}
+
+.b-large-GL, .header-icon-GL{
+    background: url("../public/images/gl-large.png") no-repeat;
+}
+
+.b-large-SH, .header-icon-SH{
+    background: url("../public/images/sh-large.png") no-repeat;
+}
+
+.b-large-PW, .header-icon-PW{
+    background: url("../public/images/pw-large.png") no-repeat;
+}
+
+.b-large-KKR, .header-icon-KKR{
+    background: url("../public/images/kkr-large.png") no-repeat;
+}
+
+.b-large-MI, .header-icon-MI{
+    background: url("../public/images/mi-large.png") no-repeat;
+}
+
+.b-large-RR, .header-icon-RR{
+    background: url("../public/images/rr-large.png") no-repeat;
+}
+
+.b-large-DC, .header-icon-DC{
+    background: url("../public/images/dc-large.png") no-repeat;
+}
+
+.b-large-CSK, .header-icon-CSK{
+    background: url("../public/images/csk-large.png") no-repeat;
+}
+
+.b-large-DC-C, .header-icon-DC-C{
+    background: url("../public/images/dc-c-large.png") no-repeat;
+}
+
+.b-large-KTK, .header-icon-KTK{
+    background: url("../public/images/ktk-large.png") no-repeat;
+}
+
+.cw-chart .recharts-wrapper .recharts-text {
+    font-size: 11px;
+}
+
+.cw-chart .recharts-wrapper .recharts-legend-item-text {
+    text-transform: uppercase;
+    font-size: 14px;
+}

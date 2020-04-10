@@ -1,0 +1,1691 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html {}
+
+body {
+    font-family: "Poppins", sans-serif;
+    /* background-color: #56baed; */
+    background: url("../public/images/bodybg.png") no-repeat;
+    background-size: cover;
+    color: #716f6f;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+header {
+    position: fixed !important;
+}
+
+button.active,
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+footer {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 11px;
+    bottom: 0;
+    color: #8a8383;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.root-header,
+.header-title {
+    flex-grow: 1;
+}
+
+.header-title {
+    color: #9e9e9e !important;
+}
+
+.mat-button-menu {
+    color: #868282 !important;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 100px 20px 35px !important;
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar-nav li:hover {
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    color: #0d0d0d;
+}
+
+.dropdown-menu {
+    display: block;
+    font-size: 13px;
+    width: 100%;
+}
+
+.header-dropdown {
+    position: relative;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.tran-container {
+    padding: 15px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#325c28+0,c1b836+100&0.69+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(50, 92, 40, 0.69) 0%, rgba(193, 184, 54, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(50, 92, 40, 0.69) 0%, rgba(193, 184, 54, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(50, 92, 40, 0.69) 0%, rgba(193, 184, 54, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0325c28', endColorstr='#c1b836', GradientType=0);
+    /* IE6-9 */
+}
+
+.home-main-wrapper {
+    margin-top: 2rem;
+}
+
+.form-wrapper {
+    padding: 2rem;
+}
+
+.home-form-container {
+    border-radius: 5px 5px 0 0;
+}
+
+.tran-container input,
+.tran-container select,
+.tran-container button {
+    border-radius: 0;
+}
+
+.cw-btn-login {
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+    border: none;
+    margin-top: 1rem;
+}
+
+.login-menu {
+    right: 0;
+    left: initial;
+    border-radius: 0;
+    margin-top: 0px;
+    min-width: 200px;
+    padding: 0;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    max-width: 200px;
+}
+
+.login-menu a {
+    display: block;
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid #635f5f;
+}
+
+.login-menu a:hover {
+    background: #494a48;
+    cursor: pointer;
+}
+
+.login-menu a:first-child {
+    border: none;
+}
+
+.login-menu:after {
+    /* content: '';
+    display: block;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: -3px;
+    right: 21px;
+    width: 0;
+    height: 0; */
+}
+
+.cw-btn-login:hover {
+    background-position: right center;
+}
+
+.form-group .MuiFormControl-root {
+    min-width: 100%;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+label.validation-message {
+    color: #ed5558;
+    font-size: 13px;
+}
+
+.cw-form-wrapper label.validation-message {
+    background: #d20f0f;
+    color: #fff;
+    border-radius: 2px;
+    padding: 2px 10px;
+    width: 100%;
+    font-size: 11px;
+}
+
+.error-msg {
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 40px 8px 10px 8px;
+    color: #fff;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+/* Simple CSS3 Fade-in Animation */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+
+.underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+}
+
+.underlineHover:hover {
+    color: #fff;
+}
+
+.underlineHover:hover:after {
+    width: 100%;
+}
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+}
+
+#icon {
+    width: 60%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.alert {
+    padding: 20px;
+    background-color: rgba(244, 67, 54, 0.5);
+    color: white;
+    margin-bottom: 15px;
+    border-color: #ccc;
+}
+
+.success {
+    padding: 20px;
+    background-color: #249424;
+    /* Green */
+    color: white;
+    margin-bottom: 15px;
+}
+
+.back-to-home {
+    position: fixed !important;
+    right: 2%;
+    top: 90px;
+}
+
+.note {
+    font-size: 11px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #868686;
+}
+
+.setting-button {
+    /* background: rgba(0, 0, 0, 0.2); */
+    height: 64px;
+    display: flex;
+    min-width: 68px;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-button.red {
+    background: #de3e35;
+}
+
+.setting-button button.MuiIconButton-root {
+    color: #FFF;
+}
+
+.auth-wrapper {
+    max-width: 450px;
+    margin: 5rem auto 0;
+}
+
+.squard-wrapper {
+    max-width: 1100px;
+    margin: 1rem auto 0;
+}
+
+.squard-wrapper .squard-content {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.squard-wrapper .squard-heading {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.squard-wrapper .squard-subheading {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    margin: 1rem 0;
+}
+
+.squard-content .team-name {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0.5rem;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.8);    
+}
+
+.squard-content .team-name .batsman-logo {
+    background: url("../public/images/bat.png") no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    display: block;
+    position: absolute;
+    right: -27px;
+    top: -16px;
+}
+.squard-content .team-name .bowler-logo {
+    background: url("../public/images/ball.png") no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    display: block;
+    position: absolute;
+    right: -27px;
+    top: -16px;
+}
+.squard-content .squard-container {
+    overflow: auto;
+    max-height: 200px;
+}
+
+.link {
+    cursor: pointer;
+    color: #4285f4;
+}
+
+.cw-link-button:hover {
+    text-decoration: none;
+}
+
+.close-modal {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+
+.user-info {
+    color: #fff;
+    align-items: center;
+    margin-right: 2rem;
+    position: absolute;
+    right: 73px;
+    top: 16px;
+    font-weight: bold;
+    width: 124px;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    padding: 4px 7px;
+}
+
+.user-info .user-info-name {
+    max-width: 120px;
+}
+
+.logo {
+    background: url("../public/images/logo.svg") no-repeat;
+    text-indent: -999999px;
+    min-width: 64px;
+    height: 55px;
+    display: inline-block;
+    background-size: 100%;
+}
+
+.user-type {
+    background: rgba(138, 146, 140, 0.6);
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+.match-section {
+    padding: 0;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.match-item {
+    margin-top: 1rem;
+}
+
+.match-item:nth-child(odd) {
+    border-bottom: 5px solid #D7CF00;
+}
+
+.match-item:nth-child(even) {
+    border-bottom: 5px solid #ecabab;
+}
+
+.match-item .match-date {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.match-item .match-content {
+    background: #fff;
+    padding: 10px;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.match-item .match-data {
+    padding: 10px 15px;
+}
+
+.match-item .team-wrapper {
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+}
+
+.match-item .team-wrapper .team-name {
+    line-height: 30px;
+}
+
+.match-item .winner {
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    padding: 0;
+    margin-left: 7px;
+}
+
+.match-item .winner.iswinner {
+    background: url("../public/images/winner.svg") no-repeat;
+    background-size: 100%;
+    margin-top: 7px;
+}
+
+.match-item .score-wrapper {
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+
+.match-item .score-wrapper:last-child {
+    padding: 0;
+}
+
+.match-item .score-wrapper .over {
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.match-item .pom-wrapper .player-name {
+    font-size: 13px;
+}
+
+.match-item .toss-wrapper {
+    font-size: 12px;
+}
+
+.master-wrapper {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+}
+
+.match-item .team-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    padding: 0;
+    margin-right: 3px;
+    margin-right: 6px;
+    background-position: center center;
+}
+
+.match-item .winner-wrapper {
+    font-size: 13px;
+}
+
+.match-item .match-data.team-section {
+    width: 300px;
+}
+
+.match-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 5px;
+}
+
+.slider-item {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 13px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider-item::after {
+    content: '';
+    width: 1px;
+    height: 45px;
+    background: #585858;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    display: block;
+}
+
+.slider-item .winner-info {
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slider-item .match-data {
+    border-radius: 5px;
+    overflow: hidden;
+    min-height: 33px;
+}
+
+.slider-item .match-info {
+    padding: 0 8px;
+}
+
+.slider-item .result-data {
+    color: #2a2a2a;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 5px;
+    background: #fff;
+    position: static;
+    z-index: 2;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.slider-item .result-data span {
+    padding: 0 3px;
+}
+
+.slider-item .result-data .run span {
+    padding: 0;
+}
+
+.slider-item .result-data span.vs {
+    color: #fff;
+    background: #0d0d0d;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.slider-item .team .team-icon {
+    display: inline-block;
+    min-width: 50px;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.slider-item .team.team-1 .team-icon {
+    background-position: -16px center;
+}
+
+.slider-item .team.team-2 .team-icon {
+    background-position: 9px center;
+}
+
+.slider-item .match-date {
+    width: 30px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.slider-item .team .team-name {
+    line-height: 33px;
+    padding: 0 5px;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px #484242;
+}
+
+.slider-item .team.team-2,
+.slider-item .team.team-1 {
+    position: static;
+    z-index: 1
+}
+
+.slider-item .team.team-1 {
+    margin-right: -2px;
+}
+
+.slider-item .team.team-2 {
+    margin-left: -2px;
+}
+
+.slider-item .team.RPS {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#703255+0,75445f+50,77184e+52,77184e+100 */
+    background: rgb(112, 50, 85);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(112, 50, 85, 1) 0%, rgba(117, 68, 95, 1) 50%, rgba(119, 24, 78, 1) 52%, rgba(119, 24, 78, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(112, 50, 85, 1) 0%, rgba(117, 68, 95, 1) 50%, rgba(119, 24, 78, 1) 52%, rgba(119, 24, 78, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(112, 50, 85, 1) 0%, rgba(117, 68, 95, 1) 50%, rgba(119, 24, 78, 1) 52%, rgba(119, 24, 78, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#703255', endColorstr='#77184e', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.RCB {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f85032+0,f16f5c+50,f6290c+51,f02f17+71,e73827+100;Red+Gloss+%231 */
+    background: rgb(248, 80, 50);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.MI {
+    background: rgb(55, 81, 117);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(55, 81, 117, 1) 1%, rgba(88, 101, 119, 1) 50%, rgba(49, 79, 122, 1) 52%, rgba(62, 86, 119, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(55, 81, 117, 1) 1%, rgba(88, 101, 119, 1) 50%, rgba(49, 79, 122, 1) 52%, rgba(62, 86, 119, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(55, 81, 117, 1) 1%, rgba(88, 101, 119, 1) 50%, rgba(49, 79, 122, 1) 52%, rgba(62, 86, 119, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#375175', endColorstr='#3e5677', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.KKR {
+    background: rgb(49, 79, 122);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(49, 79, 122, 1) 0%, rgba(70, 117, 170, 1) 50%, rgba(49, 79, 122, 1) 53%, rgba(49, 79, 122, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(49, 79, 122, 1) 0%, rgba(70, 117, 170, 1) 50%, rgba(49, 79, 122, 1) 53%, rgba(49, 79, 122, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(49, 79, 122, 1) 0%, rgba(70, 117, 170, 1) 50%, rgba(49, 79, 122, 1) 53%, rgba(49, 79, 122, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#314f7a', endColorstr='#314f7a', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.DD {
+    background: rgb(112, 140, 173);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(112, 140, 173, 1) 0%, rgba(70, 117, 170, 1) 50%, rgba(26, 92, 173, 1) 52%, rgba(37, 97, 174, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(112, 140, 173, 1) 0%, rgba(70, 117, 170, 1) 50%, rgba(26, 92, 173, 1) 52%, rgba(37, 97, 174, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(112, 140, 173, 1) 0%, rgba(70, 117, 170, 1) 50%, rgba(26, 92, 173, 1) 52%, rgba(37, 97, 174, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#708cad', endColorstr='#2561ae', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.GL {
+    background: rgb(140, 91, 70);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(140, 91, 70, 1) 0%, rgba(140, 101, 85, 1) 50%, rgba(142, 66, 32, 1) 57%, rgba(140, 89, 67, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(140, 91, 70, 1) 0%, rgba(140, 101, 85, 1) 50%, rgba(142, 66, 32, 1) 57%, rgba(140, 89, 67, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(140, 91, 70, 1) 0%, rgba(140, 101, 85, 1) 50%, rgba(142, 66, 32, 1) 57%, rgba(140, 89, 67, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c5b46', endColorstr='#8c5943', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.KXP {
+    background: rgb(248, 80, 50);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(248, 80, 50, 1) 0%, rgba(241, 111, 92, 1) 50%, rgba(246, 41, 12, 1) 51%, rgba(240, 47, 23, 1) 71%, rgba(231, 56, 39, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .team.SH {
+    background: rgb(244, 190, 95);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(244, 190, 95, 1) 0%, rgba(244, 199, 119, 1) 50%, rgba(244, 173, 51, 1) 53%, rgba(246, 168, 32, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(244, 190, 95, 1) 0%, rgba(244, 199, 119, 1) 50%, rgba(244, 173, 51, 1) 53%, rgba(246, 168, 32, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(244, 190, 95, 1) 0%, rgba(244, 199, 119, 1) 50%, rgba(244, 173, 51, 1) 53%, rgba(246, 168, 32, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4be5f', endColorstr='#f6a820', GradientType=0);
+    /* IE6-9 */
+}
+
+.slider-item .match-info {
+    width: 90%;
+}
+
+.dashboard-header {
+    min-height: 200px;
+    background: url("../public/images/bodybg.png") no-repeat center top;
+    background-size: cover;
+}
+
+.dashboard-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding-bottom: 2rem;
+}
+
+.dash-center-align {
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-header .heading {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.dashboard-header .winning-trophy {
+    background: url("../public/images/trophy.svg") no-repeat center bottom;
+    min-width: 172px;
+    min-height: 200px;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.dashboard-header .winning-trophy .ball {
+    background: url("../public/images/ball.png") no-repeat center center;
+    width: 74px;
+    height: 69px;
+    position: absolute;
+    top: -35px;
+    left: 49px;
+}
+
+.dashboard-header .winning-trophy .player-of-match {
+    position: absolute;
+    font-size: 12px;
+    display: block;
+    color: #fff;
+    bottom: -20px;
+    min-width: 300px;
+    text-align: center;
+    margin-left: -60px;
+}
+
+.dashboard-header .team-info {
+    color: #fff;
+}
+
+.dashboard-header .team-info ul li {
+    list-style: none;
+    font-size: 13px;
+    text-align: right;
+}
+
+.dashboard-header .team-info ul li.team-name {
+    font-size: 17px;
+    font-weight: bold;
+    width: 167px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-header .team-info ul li.team-score {
+    font-size: 25px;
+}
+
+.dashboard-header .team-info.team-2 ul li {
+    text-align: left;
+}
+
+.dashboard-header .team-logo {
+    text-indent: -9999px;
+    width: 200px;
+    height: 200px;
+    margin: 0 22px;
+}
+
+.dashboard-body {
+    background: #ccc;
+}
+
+.dashboard-body .dash-section {
+    margin-bottom: 4rem
+}
+
+.dashboard-body .dash-section .player-avatar {
+    text-indent: -9999px;
+    /* background: url("../public/images/player.png") no-repeat center bottom transparent; */
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+    min-height: 30px;
+}
+
+.dashboard-body .dash-section .bat-icon {
+    background: url("../public/images/bat.png") no-repeat center bottom transparent;
+    background-size: contain;
+}
+
+.dashboard-body .dash-section .ball-icon {
+    background: url("../public/images/ball.png") no-repeat center bottom transparent;
+    background-size: contain;
+}
+
+.over-summary-wrapper {
+    background: #343a40;
+    color: #fff;
+    font-size: 12px;
+    padding: 14px;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    box-shadow: inset 59px 45px 166px #000;
+}
+
+.over-summary-wrapper .over {
+    flex-direction: column;
+}
+
+.over-summary-wrapper .over .over-details {
+    padding-left: 2px;
+}
+
+.player-icon {
+    background: url("../public/images/ball.png") no-repeat center bottom #fff;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-size: 100%;
+    border-radius: 50%;
+}
+
+.over-summary-wrapper .ball {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 13px;
+    align-items: center;
+}
+
+.over-summary-wrapper .ball .ball-type {
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 15px;
+    border-radius: 50%;
+    color: #868686;
+    text-align: center;
+    line-height: 29px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.over-summary-wrapper .ball .ball-type.four-run {
+    background: #5191CD;
+    color: #fff;
+}
+
+.over-summary-wrapper .ball .ball-type.six-run {
+    background: #19398A;
+    color: #fff;
+}
+
+.over-summary-wrapper .ball .ball-type.wicket {
+    background: #CF0A2C;
+    color: #fff;
+}
+
+.over-summary-wrapper .player-name {
+    flex-direction: column;
+}
+
+.over-summary-wrapper .inning-no {
+    font-size: 15px;
+    text-align: center;
+    background: #ccc;
+    color: #0d0d0d;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding: 8px 0;
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+.inner-page-header {
+    background: url("../public/images/splash.svg") no-repeat 0 -500px;
+    background-size: 100%;
+}
+
+.inner-page-header-wrapper {
+    padding: 2rem 2rem;
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.inner-page-header-wrapper .page-heading {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.team-items {
+    border-radius: 10px;
+    padding: 2rem;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    align-content: center;
+    margin: 1rem 1rem;
+    min-width: 20%;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+}
+
+.team-items:hover .team-icon-sheld {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.team-items:hover .team-icon-sheld {
+    transform: scale(1.1);
+}
+
+.team-items.background-CSK {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fda10e+0,fa7907+100 */
+    background: rgb(253, 161, 14);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(253, 161, 14, 1) 0%, rgba(250, 121, 7, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(253, 161, 14, 1) 0%, rgba(250, 121, 7, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(253, 161, 14, 1) 0%, rgba(250, 121, 7, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fda10e', endColorstr='#fa7907', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-DC {
+    background-image: linear-gradient(to right, #21211F 0%, #494945 100%);
+}
+
+.team-items.background-DC-C {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#255eaa+0,282968+100 */
+    background: rgb(37, 94, 170);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(37, 94, 170, 1) 0%, rgba(40, 41, 104, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(37, 94, 170, 1) 0%, rgba(40, 41, 104, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(37, 94, 170, 1) 0%, rgba(40, 41, 104, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#255eaa', endColorstr='#282968', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-DD {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1942c+0,bf2418+99 */
+    background: rgb(225, 148, 44);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(225, 148, 44, 1) 0%, rgba(191, 36, 24, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(225, 148, 44, 1) 0%, rgba(191, 36, 24, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(225, 148, 44, 1) 0%, rgba(191, 36, 24, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1942c', endColorstr='#bf2418', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-GL {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8c411e+1,bf2418+99 */
+    background: rgb(140, 65, 30);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(140, 65, 30, 1) 1%, rgba(191, 36, 24, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(140, 65, 30, 1) 1%, rgba(191, 36, 24, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(140, 65, 30, 1) 1%, rgba(191, 36, 24, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c411e', endColorstr='#bf2418', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-GL {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8c411e+1,bf2418+99 */
+    background: rgb(140, 65, 30);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(140, 65, 30, 1) 1%, rgba(191, 36, 24, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(140, 65, 30, 1) 1%, rgba(191, 36, 24, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(140, 65, 30, 1) 1%, rgba(191, 36, 24, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c411e', endColorstr='#bf2418', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-KXP {
+    background-image: linear-gradient(to right, #ED1C24 0%, #96191d 100%);
+}
+
+.team-items.background-KTK {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#667ebc+0,141006+99 */
+    background: rgb(102, 126, 188);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(102, 126, 188, 1) 0%, rgba(20, 16, 6, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(102, 126, 188, 1) 0%, rgba(20, 16, 6, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(102, 126, 188, 1) 0%, rgba(20, 16, 6, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#667ebc', endColorstr='#141006', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-KKR {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9f8150+0,3a225d+99 */
+    background: rgb(159, 129, 80);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(159, 129, 80, 1) 0%, rgba(58, 34, 93, 1) 99%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(159, 129, 80, 1) 0%, rgba(58, 34, 93, 1) 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(159, 129, 80, 1) 0%, rgba(58, 34, 93, 1) 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f8150', endColorstr='#3a225d', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-MI {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfa73f+0,082964+100 */
+    background: rgb(191, 167, 63);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(191, 167, 63, 1) 0%, rgba(8, 41, 100, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(191, 167, 63, 1) 0%, rgba(8, 41, 100, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(191, 167, 63, 1) 0%, rgba(8, 41, 100, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfa73f', endColorstr='#082964', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-PW {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#db5959+0,000000+100 */
+    background: rgb(219, 89, 89);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(219, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(219, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(219, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db5959', endColorstr='#000000', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-PW {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#db5959+0,000000+100 */
+    background: rgb(219, 89, 89);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(219, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(219, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(219, 89, 89, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db5959', endColorstr='#000000', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-RR {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1baac6+0,254aa5+100 */
+    background: rgb(27, 170, 198);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(27, 170, 198, 1) 0%, rgba(37, 74, 165, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(27, 170, 198, 1) 0%, rgba(37, 74, 165, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(27, 170, 198, 1) 0%, rgba(37, 74, 165, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1baac6', endColorstr='#254aa5', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-RPS {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e6a436+1,ab1462+100 */
+    background: rgb(230, 164, 54);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(230, 164, 54, 1) 1%, rgba(171, 20, 98, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(230, 164, 54, 1) 1%, rgba(171, 20, 98, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(230, 164, 54, 1) 1%, rgba(171, 20, 98, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6a436', endColorstr='#ab1462', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-RCB {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c96530+0,c11717+100 */
+    background: rgb(201, 101, 48);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(201, 101, 48, 1) 0%, rgba(193, 23, 23, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(201, 101, 48, 1) 0%, rgba(193, 23, 23, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(201, 101, 48, 1) 0%, rgba(193, 23, 23, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c96530', endColorstr='#c11717', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items.background-SH {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffa84c+0,ff7b0d+100;Orange+3D */
+    background: rgb(255, 168, 76);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255, 168, 76, 1) 0%, rgba(255, 123, 13, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 168, 76, 1) 0%, rgba(255, 123, 13, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 168, 76, 1) 0%, rgba(255, 123, 13, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d', GradientType=1);
+    /* IE6-9 */
+}
+
+.team-items .team-name {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.30);
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.team-icon-sheld {
+    background: url("../public/images/shield-trans.png") no-repeat top transparent;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-icon-sheld .team-icon {
+    width: 110px;
+    height: 110px;
+    display: block;
+    text-indent: -9999px;
+    background-size: 100%;
+}
+
+.winning-section {
+    text-align: center;
+}
+
+.winning-section .winning-year {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 6px;
+    justify-content: center;
+}
+
+.winning-section .winning-year .icon {
+    background: url("../public/images/winner.svg") no-repeat left center transparent;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+}
+
+.ipl-team-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cw-form-wrapper {
+    margin-top: 2rem;
+}
+
+.cw-form-wrapper .form-heading {
+    background: url("../public/images/splash.svg") no-repeat 50px top transparent;
+    background-size: cover;
+}
+
+.cw-form-wrapper .form-heading .form-heading-tag {
+    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.3) 0%, #f9d423 100%);
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 1rem;
+}
+
+.cw-side-menu .MuiDrawer-paper {
+    background: url("../public/images/splash.svg") no-repeat left 200px transparent;
+    background-size: cover;
+}
+
+.cw-side-menu .menu-container {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+}
+
+.chart-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.chart-wrapper .chart-subheading {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chart .chart-content-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #32383d;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.popup-wrapper {
+    background: url("../public/images/splash.svg") no-repeat left 50px transparent;
+    background-size: cover;
+}
+
+.formContent {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.user-wrapper .tab-content-heading {
+    font-size: 20px;
+    padding: 1rem 0;
+    color: #656262;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.user-wrapper .tab-content-heading span {
+    display: block;
+    font-size: 12px;
+    color: #908a8a;
+    padding-top: 0.5rem;
+}
+
+.header-icon-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.cw-top-toolbar {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-header .favorite-team-icon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    right: 0;
+    margin-left: -100px;
+    opacity: 0.3;
+    color: #fff;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.landing-backdrop {
+    position: absolute;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.landing-content {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -200px;
+}
+
+.home-link {
+    position: absolute;
+    right: 22%;
+    top: 50%;
+    color: #fff;
+}
+
+.home-link button {
+    color: #fff;
+}
+
+.fa-arrow-right {
+    -webkit-animation: bounceRight 2s infinite;
+    animation: bounceRight 2s infinite;
+    float: right;
+}
+
+.landing-page-content {
+    min-width: 600px;
+    align-items: center;
+}
+
+.landing-page-content .landing-icon {
+    background: url("../public/images/logo-white.png") no-repeat center top transparent;
+    display: block;
+    width: 200px;
+    height: 180px;
+}
+
+.landing-name {
+    border-top: 1px solid #fff;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.landing-name span {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+}
+
+.landing-name span.small {
+    font-size: 12px;
+    font-style: normal;
+    color: #ccc;
+}
+
+.twitter-small {
+    font-size: 11px;
+    color: #fff;
+}
+
+.sc-info {
+    padding: 0.5rem 2rem;
+    border-right: 1px solid #dedede;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sc-info:last-child {
+    border: none;
+}
+
+.sc-info .sc-info-value {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------Spinner-------------------------------------------  */
+
+/* right bounce */
+
+@-webkit-keyframes bounceRight {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    40% {
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+    60% {
+        -webkit-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+}
+
+@-moz-keyframes bounceRight {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-30px);
+    }
+    60% {
+        transform: translateX(-15px);
+    }
+}
+
+@keyframes bounceRight {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    40% {
+        -ms-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+    60% {
+        -ms-transform: translateX(-15px);
+        transform: translateX(-15px);
+    }
+}
+
+/* /right bounce */
+
+.spinner-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999999;
+}
+
+.spinner-container .spinner-element {
+    background: url("../public/images/logo-white.png") no-repeat left top transparent;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    background-size: 100%;
+}
+
+.spinner-container .spinner-element .loader {
+    background: url("../public/images/loader.gif") no-repeat left top transparent;
+    width: 220px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    top: 100px;
+    margin-left: -100px;
+}
+
+.spinner {
+    animation: rotator 1.4s linear infinite;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@keyframes colors {
+    0% {
+        stroke: #4285f4;
+    }
+    25% {
+        stroke: #de3e35;
+    }
+    50% {
+        stroke: #f7c223;
+    }
+    75% {
+        stroke: #1b9a59;
+    }
+    100% {
+        stroke: #4285f4;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        transform: rotate(450deg);
+    }
+}
