@@ -1,4 +1,4 @@
-# IPL Application Instructions
+# React NodeJS MongoDB CRUD application with JWT Authentication
 
 C&W IPL Application is a Meanstack App for IPL all season's matches and team status with detail report
 
