@@ -2,7 +2,7 @@
 
 This Application is a Meanstack App for IPL all season's matches and team status with detail report
 
-## Installation
+## Installation Instructions
 
 Use npm package manager for installing packages from package.json file present both in root and server level
 
